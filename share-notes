@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Share Your Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial;
+      text-align: center;
+      padding: 20px;
+    }
+    input, button {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      background: #00ff99;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>Share Your Notepad File</h2>
+
+<form action="https://formsubmit.co/unshared_network@outlook.com"
+      method="POST"
+      enctype="multipart/form-data">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <input type="file" name="note_file" accept=".txt" required>
+
+  <!-- FormSubmit settings -->
+  <input type="hidden" name="_subject" value="New Notepad File Received">
+  <input type="hidden" name="_captcha" value="false">
+
+  <button type="submit">Send Note File</button>
+
+</form>
+
+</body>
+</html>
